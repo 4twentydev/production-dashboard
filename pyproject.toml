@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elward-wcc"
+version = "0.1.0"
+description = "Elward Systems Work Command Center"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "nicegui>=2.0",
+]
+
+[project.scripts]
+elward-wcc = "elward_wcc.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+elward_wcc = ["schema.sql"]
+

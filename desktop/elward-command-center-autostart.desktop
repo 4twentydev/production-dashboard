@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Elward Command Center
+Comment=Start Elward Command Center after login
+Exec=bash -lc 'cd "__ELWARD_WCC_ROOT__" && python3 app.py'
+Path=__ELWARD_WCC_ROOT__
+Icon=__ELWARD_WCC_ROOT__/desktop/elward-command-center.svg
+Terminal=false
+Categories=Office;Utility;
+StartupNotify=false
+X-GNOME-Autostart-enabled=true

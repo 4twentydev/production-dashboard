@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Elward Command Center
+Comment=Elward production dashboard
+Exec=bash -lc 'cd "__ELWARD_WCC_ROOT__" && python3 app.py'
+Path=__ELWARD_WCC_ROOT__
+Icon=__ELWARD_WCC_ROOT__/desktop/elward-command-center.svg
+Terminal=false
+Categories=Office;Utility;
+StartupNotify=true
